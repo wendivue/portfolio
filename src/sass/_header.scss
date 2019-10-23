@@ -1,0 +1,64 @@
+.page__header {
+  position: absolute;
+  width: 100%;
+
+  @media (max-width: $screen-md) {
+    position: fixed;
+    background: $color-primary; //#41CCC7
+    z-index: 3;
+  }
+}
+
+.header__main {
+  padding-top: 1rem;
+
+  @media (max-width: $screen-lg) {
+    padding-top: 0;
+  }
+}
+
+.item {
+		width: 100%;
+		input[type="checkbox"] {
+			display: none;
+			&:checked {
+				& + label {
+					& + ul {
+						display: block;
+					}
+				}
+			}
+		}
+  }
+
+.nav {
+
+  &__list {
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__item {
+    font-size: 1.3em;
+    float: left;
+  }
+
+  &__link {
+    display: block;
+    padding: 1em;
+  }
+
+  &__input {display: none;}
+
+  &__touch-menu {
+    display: none;
+    padding: 0 0.5rem;
+    font-size: 35px;
+    cursor: pointer;
+
+    @media (max-width: $screen-md) {
+      display: block;
+    }
+  }
+}

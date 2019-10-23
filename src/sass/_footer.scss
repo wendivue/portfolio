@@ -1,0 +1,10 @@
+.footer {
+  background: $color-secondary;
+
+  .link {color: $text-secondary-color;}
+
+  &__text {
+    padding: 1.15rem 0;
+    color: $text-secondary-color;
+  }
+}

@@ -1,0 +1,45 @@
+.link {
+  color: $text-main-color;
+
+  &:hover {text-decoration: underline;}
+
+  &--underline {text-decoration: underline;}
+}
+
+.fa {
+  font-size: 32px;
+
+  @media (max-width: $screen-md) {
+    font-size:28px;
+  }
+}
+
+.social {
+
+  &__icon {
+    padding: 0.8rem;
+
+
+    &:hover {
+      border-bottom: 4px solid $color-primary;
+
+      @media (max-width: $screen-md) {
+        border: none;
+      }
+    }
+  }
+}
+
+.сaption-block {
+  @extend h2;
+  margin: 4rem 0;
+  text-decoration: underline;
+  font-weight: bold;
+
+  @media (max-width: $screen-lg) {
+    margin: 3rem 0;
+  }
+  @media (max-width: $screen-md) {
+    margin: 2rem 0;
+  }
+}
